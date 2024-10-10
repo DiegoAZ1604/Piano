@@ -9,7 +9,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
-        final Intent intent;
+        Intent intent;
         if (id == R.id.item1) {
             intent = new Intent(this, MainActivity.class);
         } else if (id == R.id.item2) {
@@ -32,14 +31,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             return super.onOptionsItemSelected(item);
         }
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Ha cambiado  ");
-        builder.setMessage("de Piano");
-        builder.setPositiveButton("OK", (dialog, which) -> {
-            builder.create().dismiss();
-            startActivity(intent);
-        });
-        builder.create().show();
+        startActivity(intent);
         return true;
     }
     private void showToast(String message){
