@@ -94,4 +94,33 @@ public class Activity2 extends AppCompatActivity {
         showToast("Serpiente");
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(mediaPlayerElefante != null){
+            mediaPlayerElefante.release();
+        }
+        if(mediaPlayerHiena != null){
+            mediaPlayerHiena.release();
+        }
+        if(mediaPlayerLemur != null){
+            mediaPlayerLemur.release();
+        }
+        if(mediaPlayerLeon != null){
+            mediaPlayerLeon.release();
+        }
+        if(mediaPlayerMono != null){
+            mediaPlayerMono.release();
+        }
+        if(mediaPlayerRana != null){
+            mediaPlayerRana.release();
+        }
+        if(mediaPlayerTucan != null){
+            mediaPlayerTucan.release();
+        }
+        if(mediaPlayerCulebra != null){
+            mediaPlayerCulebra.release();
+        }
+    }
+
 }
