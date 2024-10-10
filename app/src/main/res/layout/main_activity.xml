@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        tools:ignore="ObsoleteLayoutParam">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.5"
+            android:background="@color/white"
+            android:onClick="do1"
+            tools:ignore="RtlHardcoded,SpeakableTextPresentCheck" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.5"
+            android:background="@color/white"
+            android:onClick="re"
+            tools:ignore="RtlHardcoded,SpeakableTextPresentCheck" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.5"
+            android:background="@color/white"
+            android:onClick="mi"
+            tools:ignore="RtlHardcoded,SpeakableTextPresentCheck" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.5"
+            android:background="@color/white"
+            android:onClick="fa"
+            tools:ignore="RtlHardcoded,SpeakableTextPresentCheck" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.5"
+            android:background="@color/white"
+            android:onClick="sol"
+            tools:ignore="RtlHardcoded,SpeakableTextPresentCheck" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.5"
+            android:background="@color/white"
+            android:onClick="la"
+            tools:ignore="RtlHardcoded,SpeakableTextPresentCheck" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.5"
+            android:background="@color/white"
+            android:onClick="si"
+            tools:ignore="RtlHardcoded,SpeakableTextPresentCheck" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.5"
+            android:background="@color/white"
+            android:onClick="do2"
+            tools:ignore="RtlHardcoded,SpeakableTextPresentCheck" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/black"/>
+</RelativeLayout>
